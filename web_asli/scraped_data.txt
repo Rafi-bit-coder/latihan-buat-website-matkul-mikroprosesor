@@ -1,0 +1,1214 @@
+===== WEBSITE SCRAPER =====
+
+Website Title: Diktat Kuliah: Arsitektur & Organisasi Mikroprosesor (16 Pertemuan Lengkap) â¢ Rekayasa Sistem Komputer
+
+===== HEADINGS =====
+
+h1: Diktat Kuliah: Arsitektur & Organisasi Mikroprosesor
+h2: Pengantar Mikroprosesor & Evolusi Arsitektur Komputer
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Taksonomi Generasi Mikroprosesor & Skalabilitas Arsitektur
+h3: 2. Batasan Fisika Komputasi: Hukum Moore, Dennard Scaling & Power Wall
+h3: 3. Komparasi Komprehensif MPU, MCU, DSP, dan SoC
+h2: Arsitektur Internal CPU & Blok Diagram Fungsional
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Pemisahan Bus Interface Unit (BIU) dan Execution Unit (EU)
+h3: 2. Organisasi Bank Register Internal Intel 8086
+h3: 3. Analisis Mendalam Status Flag & Kondisi Batas Matematis
+h2: Sistem Bus, Organisasi Memori & Perancangan Dekoder Alamat
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Alasan Rekayasa De-multiplexing Bus Alamat & Data (AD0âAD15)
+h3: 2. Matematika Segmentasi Memori & Translasi Alamat Fisik 20-Bit
+h3: 3. Perancangan Dekoder Alamat Memori Menggunakan IC 74LS138
+h2: Mode Pengalamatan Data Komprehensif (Addressing Modes)
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Alur Perhitungan Alamat Efektif (Effective Address / EA)
+h3: 2. Taksonomi Komprehensif Mode Pengalamatan Intel 8086
+h2: Set Instruksi I: Manipulasi Data, Aritmetika Biner & Logika Bitwise
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Aturan Emas Transfer Data pada Arsitektur CISC x86
+h3: 2. Aritmetika Multi-Presisi 32-Bit pada Mikroprosesor 16-Bit
+h3: 3. Perbedaan Kritis Shifting Logika vs Aritmetika (SHR vs SAR)
+h2: Set Instruksi II: Kontrol Alur Program, Percabangan & Struktur Stack Frame
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Klasifikasi Lompatan Bebas: Short, Near, dan Far Jump
+h3: 2. Anatomi Lengkap Pembentukan Stack Frame Fungsi
+h2: Siklus Mesin, Eksekusi Instruksi & Analisis Diagram Pewaktuan
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Dekomposisi Siklus Mesin Dasar 4 T-States pada Intel 8086
+h3: 2. Organisasi Bank Memori Genap & Ganjil (Even & Odd Memory Banks)
+h2: Evaluasi Tengah Semester (UTS): Studi Kasus Desain Sistem Minimum & Tracing
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h2: Antarmuka Input/Output (I/O Interfacing): Isolated vs Memory-Mapped I/O
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Perbandingan Teknis: Isolated I/O vs Memory-Mapped I/O
+h3: 2. Desain Rangkaian Hardware Port Sederhana 8-Bit
+h2: Arsitektur Sistem Interupsi (Hardware, Software & IVT)
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Siklus Pengenalan Interupsi Ganda Hardware (INTABus Cycles)
+h3: 2. Struktur Tabel Vektor Interupsi (IVT) 1 KB Terbawah
+h2: Antarmuka Komunikasi Serial (UART, SPI, I2C)
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Anatomi Frame Komunikasi Serial Asinkron (UART)
+h3: 2. Perbandingan Arsitektural Bus Serial Sinkron: SPI vs I2C
+h2: Komparasi Arsitektur RISC vs CISC & Arsitektur Prosesor Modern (x86 vs ARM)
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Matriks Komparasi Filosofis: RISC vs CISC
+h3: 2. Solusi Konvergensi Modern: x86 Sebagai Hibrida CISC-RISC
+h2: Programmable Peripheral Interface (PPI 8255) & Timer/Counter (8254)
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Format Control Word Register IC 8255 PPI
+h3: 2. Programmable Interval Timer (IC 8254)
+h2: Direct Memory Access (DMA) & Pengontrol DMA (IC 8237)
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Alur Protokol Perebutan Bus (Bus Arbitration: HOLD & HLDA)
+h3: 2. Keunggulan Metode Transfer Fly-By DMA
+h3: 3. Empat Mode Transfer Operasional IC 8237
+h2: Arsitektur Mikroprosesor Lanjut: Pipelining, Superscalar & Multi-Core
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h3: 1. Pipelining 5-Tahap Klasik & Analisis Throughput
+h3: 2. Deteksi & Mitigasi Tiga Jenis Pipeline Hazard
+h3: 3. Koherensi Cache Multi-Core & Protokol MESI
+h2: Evaluasi Akhir Semester (UAS): Sintesis Perancangan Sistem Berbasis Mikroprosesor
+h4: ð¯ Definisi Topik
+h4: ð Pokok Pembahasan
+h2: ðï¸ Slide Kuliah (RPS Mikroprosesor & Mikrokontroler)
+h4: Pengantar Sistem Komputer dan Mikroprosesor
+h4: Tujuan dan alur pertemuan
+h4: Sistem komputer
+h4: Peran mikroprosesor
+h4: CPU, RAM, dan I/O
+h4: RAM dan penyimpanan
+h4: Perkembangan komponen
+h4: Perkembangan prosesor
+h4: Stored program
+h4: Instruksi dan data
+h4: Peta perkuliahan
+h4: Penilaian sesuai RPS
+h4: Demonstrasi 1/4: Input angka
+h4: Demonstrasi 2/4: Instruksi tersedia
+h4: Demonstrasi 3/4: Pemrosesan
+h4: Demonstrasi 4/4: Output hasil
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Arsitektur Internal Mikroprosesor
+h4: Tujuan dan alur pertemuan
+h4: Organisasi CPU
+h4: Von Neumann
+h4: Harvard
+h4: Modified Harvard
+h4: ALU
+h4: Control Unit
+h4: General purpose register
+h4: Program Counter dan IR
+h4: Stack Pointer
+h4: Status dan flags
+h4: Demonstrasi 1/4: Operand awal
+h4: Demonstrasi 2/4: Dekode ADD
+h4: Demonstrasi 3/4: Operasi ALU
+h4: Demonstrasi 4/4: Penulisan hasil
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Sistem Bus dan Memori
+h4: Tujuan dan alur pertemuan
+h4: Struktur sistem bus
+h4: Data bus
+h4: Address bus
+h4: Lebar alamat
+h4: Control bus
+h4: Transaksi baca
+h4: Transaksi tulis
+h4: Memory mapping
+h4: Ukuran dan batas wilayah
+h4: Siklus instruksi dan siklus bus
+h4: Demonstrasi 1/4: Alamat fetch
+h4: Demonstrasi 2/4: Baca instruksi
+h4: Demonstrasi 3/4: Dekode
+h4: Demonstrasi 4/4: Eksekusi
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Mode Pengalamatan
+h4: Tujuan dan alur pertemuan
+h4: Operand dan effective address
+h4: Immediate addressing
+h4: Register addressing
+h4: Direct addressing
+h4: Register indirect
+h4: Indexed addressing
+h4: Ukuran elemen
+h4: Segmen pada 8086
+h4: Perbedaan sintaks ISA
+h4: Kesalahan pengalamatan
+h4: Demonstrasi 1/4: Offset basis
+h4: Demonstrasi 2/4: Displacement
+h4: Demonstrasi 3/4: Lokasi operand
+h4: Demonstrasi 4/4: Transfer data
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Set Instruksi dan Assembly - Bagian 1
+h4: Tujuan dan alur pertemuan
+h4: Set instruksi
+h4: Struktur baris Assembly
+h4: MOV
+h4: Memori dan ukuran operand
+h4: ADD dan SUB
+h4: Logika bit
+h4: PUSH
+h4: POP
+h4: Little endian
+h4: Program penjumlahan
+h4: Demonstrasi 1/4: Inisialisasi
+h4: Demonstrasi 2/4: Sumber tambahan
+h4: Demonstrasi 3/4: Penjumlahan
+h4: Demonstrasi 4/4: Salinan hasil
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Assembly - Alur Kontrol dan Flags
+h4: Tujuan dan alur pertemuan
+h4: Alur urut dan percabangan
+h4: JMP
+h4: CMP
+h4: JE dan JNE
+h4: Signed dan unsigned
+h4: Loop berbasis counter
+h4: LOOP pada 8086
+h4: Carry dan overflow
+h4: Manipulasi flag
+h4: Trace loop
+h4: Demonstrasi 1/4: Keadaan awal
+h4: Demonstrasi 2/4: Iterasi pertama
+h4: Demonstrasi 3/4: Iterasi kedua
+h4: Demonstrasi 4/4: Iterasi ketiga
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Praktikum dan Simulasi Assembly
+h4: Tujuan dan alur pertemuan
+h4: Tujuan simulasi
+h4: Pemilihan alat
+h4: Kerangka program
+h4: Build dan diagnosis
+h4: Single step
+h4: Breakpoint
+h4: Register dan flags
+h4: Memori dan stack
+h4: Debugging sistematis
+h4: Laporan praktikum
+h4: Demonstrasi 1/4: Prediksi
+h4: Demonstrasi 2/4: Breakpoint awal
+h4: Demonstrasi 3/4: Single step ADD
+h4: Demonstrasi 4/4: Verifikasi
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: UTS - Latihan Evaluasi Arsitektur dan Assembly
+h4: Tujuan dan alur pertemuan
+h4: Ruang lingkup UTS
+h4: Latihan CPU
+h4: Latihan arsitektur
+h4: Latihan bus
+h4: Latihan ruang alamat
+h4: Latihan rentang memori
+h4: Latihan addressing
+h4: Latihan transfer data
+h4: Latihan stack
+h4: Latihan loop
+h4: Demonstrasi 1/4: Baca soal
+h4: Demonstrasi 2/4: Ubah ukuran
+h4: Demonstrasi 3/4: Hitung batas
+h4: Demonstrasi 4/4: Periksa jawaban
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Sistem Input/Output dan Interfacing
+h4: Tujuan dan alur pertemuan
+h4: Peran antarmuka
+h4: Register periferal
+h4: Memory-Mapped I/O
+h4: I/O-Mapped I/O
+h4: Paralel dan serial
+h4: Polling status
+h4: Handshake
+h4: Level dan arah sinyal
+h4: Buffer dan laju data
+h4: Praktik interfacing
+h4: Demonstrasi 1/4: Konfigurasi
+h4: Demonstrasi 2/4: Periksa status
+h4: Demonstrasi 3/4: Baca data
+h4: Demonstrasi 4/4: Output
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Sistem Interupsi
+h4: Tujuan dan alur pertemuan
+h4: Konsep interupsi
+h4: Sumber eksternal dan internal
+h4: Polling dan interrupt-driven
+h4: Enable, pending, dan mask
+h4: Tabel vektor
+h4: IVT pada 8086
+h4: ISR
+h4: Flag sumber
+h4: Prioritas dan latensi
+h4: Data bersama
+h4: Demonstrasi 1/4: Program utama
+h4: Demonstrasi 2/4: Kejadian masuk
+h4: Demonstrasi 3/4: Layanan ISR
+h4: Demonstrasi 4/4: Kembali
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Komunikasi Serial: UART, SPI, dan I2C
+h4: Tujuan dan alur pertemuan
+h4: Komunikasi serial
+h4: UART
+h4: Frame UART 8N1
+h4: Baud dan throughput
+h4: SPI
+h4: Mode SPI
+h4: I2C
+h4: Transaksi I2C
+h4: Pemilihan protokol
+h4: Debug serial
+h4: Demonstrasi 1/4: Idle dan START UART
+h4: Demonstrasi 2/4: Bit data awal
+h4: Demonstrasi 3/4: Bit data akhir
+h4: Demonstrasi 4/4: Stop dan hasil
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Dari Mikroprosesor ke Mikrokontroler
+h4: Tujuan dan alur pertemuan
+h4: Tingkat integrasi
+h4: Mikroprosesor dan MCU
+h4: System-on-Chip
+h4: GPIO
+h4: Timer
+h4: Counter
+h4: ADC
+h4: DAC
+h4: PWM
+h4: Pemilihan MCU
+h4: Demonstrasi 1/4: Sinyal analog
+h4: Demonstrasi 2/4: Sampling
+h4: Demonstrasi 3/4: Kuantisasi
+h4: Demonstrasi 4/4: Pemakaian data
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Antarmuka Sensor dan Aktuator
+h4: Tujuan dan alur pertemuan
+h4: Rantai sensor dan aktuator
+h4: Sensor suhu
+h4: Sensor jarak
+h4: Kalibrasi dan noise
+h4: Motor DC
+h4: Motor stepper
+h4: Relay
+h4: LCD dan OLED
+h4: Debounce dan hysteresis
+h4: Pengujian bertahap
+h4: Demonstrasi 1/4: Suhu rendah
+h4: Demonstrasi 2/4: Suhu naik
+h4: Demonstrasi 3/4: Daerah hysteresis
+h4: Demonstrasi 4/4: Suhu turun
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Embedded C dan Manipulasi Register
+h4: Tujuan dan alur pertemuan
+h4: C dan hardware
+h4: Representasi bit
+h4: Set bit
+h4: Clear bit
+h4: Toggle bit
+h4: Test bit
+h4: Field beberapa bit
+h4: volatile
+h4: Read-modify-write
+h4: Perilaku register khusus
+h4: Demonstrasi 1/4: Keadaan awal
+h4: Demonstrasi 2/4: Set bit 3
+h4: Demonstrasi 3/4: Clear bit 4
+h4: Demonstrasi 4/4: Toggle bit 3
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: Presentasi dan Demo Proyek Akhir
+h4: Tujuan dan alur pertemuan
+h4: Tujuan demo
+h4: Rumusan masalah
+h4: Diagram sistem
+h4: Pilihan komponen
+h4: Organisasi software
+h4: Rencana pengujian
+h4: Demo yang dapat diulang
+h4: Analisis kegagalan
+h4: Laporan dan kontribusi
+h4: Umpan balik proyek
+h4: Demonstrasi 1/4: Keadaan awal demo
+h4: Demonstrasi 2/4: Kasus normal
+h4: Demonstrasi 3/4: Kasus batas
+h4: Demonstrasi 4/4: Bukti akhir
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h4: UAS - Evaluasi Integrasi Sistem
+h4: Tujuan dan alur pertemuan
+h4: Cakupan UAS
+h4: Kasus arsitektur
+h4: Kasus MMIO
+h4: Kasus interupsi
+h4: Kasus UART
+h4: Kasus SPI dan I2C
+h4: Kasus ADC
+h4: Kasus aktuator
+h4: Kasus Embedded C
+h4: Kasus pengujian
+h4: Demonstrasi 1/4: Gejala
+h4: Demonstrasi 2/4: Hipotesis
+h4: Demonstrasi 3/4: Perbaikan rancangan
+h4: Demonstrasi 4/4: Verifikasi
+h4: Aktivitas kelas / praktikum
+h4: Cek pemahaman
+h4: Pembahasan dan ringkasan
+h4: Catatan pengajar dan referensi
+h2: ð Referensi
+h2: Definisi istilah
+
+===== PARAGRAPHS =====
+
+Kajian menyeluruh 16 pertemuan akademik berbasis Rekayasa Sistem Komputer: membedah arsitektur internal silikon prosesor, logika bus interkoneksi, timing cycle tingkat gerbang, sistem memori tersegmentasi, interrupt controller, DMA, hingga komputasi multi-core modern.
+Baca dari kiri ke kanan: tiap kotak memuat nama chip, tahun, dan lebar data. 8086 disorot karena menjadi dasar keluarga x86 yang masih hidup di PC modern.
+ð¡ Poin kunci:Tren utamanya: lebar data naik (4 â 64 bit), transistor naik dari 2.300 ke miliaran, dan ruang alamat membesar. Lebar data menentukan ukuran operand per instruksi; lebar bus alamat n bit menentukan kapasitas memori 2nbyte.
+Mikroprosesor adalah sirkuit terpadu (Integrated Circuit/IC) berskala sangat besar (VLSI/ULSI) yang mengintegrasikan seluruh fungsi Central Processing Unit (CPU) ke dalam satu keping semikonduktor silikon monolitik. Pertemuan ini mengkaji evolusi teknologi fabrikasi mikroprosesor dari era 4-bit (Intel 4004) hingga arsitektur 64-bit multi-core modern, serta hukum-hukum fisika dasar yang membatasi kinerja komputasi perangkat keras.
+Sejarah dan Taksonomi Mikroprosesor, Hukum Moore & Dennard Scaling, Power Wall & Disipasi Termal, Arsitektur Von Neumann vs Harvard, Komparasi MPU vs MCU vs DSP vs SoC, serta Metrik Kinerja Prosesor (MIPS, MFLOPS, IPC, Clock Frequency).
+Dalam rekayasa sistem komputer, evolusi mikroprosesor ditandai oleh ekspansi lebar bus data internal/eksternal, kapasitas pengalamatan fisik, serta kerapatan integrasi transistor per milimeter persegi silikon:
+Selama beberapa dekade, perkembangan mikroprosesor dipandu oleh dua prinsip empiris:
+Sekitar tahun 2005, ketika fabrikasi semikonduktor menyentuh level sub-65 nm, voltase gerbang (Vdd) tidak bisa lagi diturunkan lebih jauh karena batas tegangan ambang batas (threshold voltage) dan arus bocor kuantum (quantum leakage current). Rumus disipasi daya dinamis CMOS:
+P_{\text{dynamic}} = C \cdot V^2 \cdot f + P_{\text{static (leakage)}}
+Jika frekuensi clock (f) dipaksa menembus 4â5 GHz, disipasi panas melonjak eksponensial (kerapatan daya mendekati batas kemampuan pendinginan udara konvensional sehingga chip terpaksa menurunkan frekuensi (thermal throttling)). Inilah yang disebutPower Wall. Akibatnya, industri beralih dari menaikkan clock tunggal (single-core scaling) ke perancanganMulti-core Parallelismdan akselerator spesifik (NPU/GPU).
+Kotak kiri (BIU) mengurus bus: register segmen, IP, antrian instruksi 6 byte, dan pembentuk alamat 20-bit. Kotak kanan (EU) mengeksekusi: register umum, pointer/indeks, ALU, flag, dan unit kendali. Panah ke kanan membawa instruksi dari antrian ke EU; panah balik membawa permintaan akses data.
+ð¡ Poin kunci:Keduanya bekerja bersamaan: BIU mengambil instruksi berikutnya selagi EU mengeksekusi yang sekarang, sehingga CPU tidak menunggu memori. Ini cikal bakal pipelining (P15).
+Dekomposisi struktural dan fungsional internal Central Processing Unit (CPU) yang memisahkan arsitektur ke dalam Bus Interface Unit (BIU) dan Execution Unit (EU). Pembahasan mencakup perancangan unit logika aritmetika (ALU), mekanisme kontrol mikro (Control Unit), organisasi bank register internal, serta analisis kondisi batas matematis pada Flag Register 16-bit.
+Pembagian Dua Unit Inti 8086 (BIU vs EU), Antrian Instruksi (Instruction Pre-fetch Queue), Struktur ALU, Control Unit (Hardwired Logic vs Microprogrammed), General Purpose Registers, Index & Pointer Registers, Segment Registers, dan Dekonstruksi 9 Bit Aktif Flag Register.
+Sebelum arsitektur Intel 8086 diciptakan, prosesor terdahulu harus berhenti mengambil instruksi berikutnya saat instruksi saat ini sedang dieksekusi (idle bus). 8086 mengatasi inefisiensi ini dengan membelah CPU menjadi dua subsistem independen yang bekerja paralel (pipelining primitif):
+Mikroprosesor 8086 memiliki 14 register internal berukuran 16-bit yang dikelompokkan berdasarkan peran fungsionalnya:
+Flag register 16-bit pada 8086 memuat 9 bit aktif: 6Status Flags(merekam hasil operasi ALU) dan 3Control Flags(mengatur perilaku prosesor):
+CPU menaruh alamat di address bus 20 jalur (1 MB), data lewat data bus 16 bit, dan sinyal RD/WR lewat control bus. Dekoder 74LS138 mengubah bit alamat tinggi menjadi satu sinyal chip-select aktif, sehingga hanya satu perangkat (ROM, RAM, atau port) yang merespons.
+ð¡ Poin kunci:Tanpa dekoder, beberapa perangkat menjawab bersamaan (bus contention). Catatan: pada 8086 alamat dan data dimultipleks di AD0âAD15, jadi perlu latch yang diaktifkan sinyal ALE.
+Kajian menyeluruh mengenai interkoneksi perangkat keras melalui sistem bus mikroprosesor, de-multiplexing jalur bus waktu terbagi (Time-Multiplexed Address/Data Bus) menggunakan Latch, konsep segmentasi memori 1 MB, perhitungan alamat fisik 20-bit, serta metodologi sintesis rangkaian dekoder alamat memori dan I/O menggunakan gerbang kombinasional dan IC Dekoder 74LS138.
+Triad Bus Sistem, De-multiplexing Bus Alamat/Data (AD0âAD15 & ALE), Segmentasi Memori 8086, Translasi Segment:Offset ke Alamat Fisik 20-bit, Perancangan Dekoder Penuh vs Sebagian (Full vs Partial Address Decoding), Sintesis Chip Select (CS) IC 74LS138, Peta Memori (Memory Mapping).
+Mikroprosesor Intel 8086 dikemas dalam standar Dual In-Line Package (DIP) 40-pin. Untuk meminimalkan jumlah pin fisik, perancang Intel menggunakan teknikTime-Multiplexed Bus: pin 2 s.d. 16 dan pin 39 merangkap fungsi sebagai jalur alamat (A0âA15) pada awal siklus clock (T1), kemudian berganti fungsi menjadi jalur data (D0âD15) pada siklus clock berikutnya (T2, T3, T4).
+Agar memori luar tidak kehilangan informasi alamat saat pin prosesor beralih fungsi menjadi data bus, diperlukan IC eksternalOctal Latch Transparan (74LS373). CPU memancarkan pulsa berlogika HIGH pada pinALEtepat pada saat T1. Saat sinyal ALE bertransisi dari HIGH ke LOW, chip 74LS373 membekukan (latch) bit alamat A0âA15sehingga alamat tetap stabil dan valid selama sisa siklus baca/tulis memori berlangsung.
+Bus alamat 8086 memiliki lebar 20-bit (A0âA19), yang mampu mengalamatkan memori fisik hingga:
+2^{20}\text{ lokasi} = 1.048.576\text{ Byte} = 1\text{ Megabyte (MB)}
+Karena seluruh register internal prosesor hanya berukuran 16-bit (hanya mampu menjangkau 216= 64 KB), prosesor menggunakan skemaSegmentasi Dua Tingkat:
+Dalam rekayasa sistem, memori 1 MB tidak pernah dipasang menggunakan keping tunggal, melainkan dipecah menjadi beberapa IC SRAM dan ROM. IC 74LS138 adalah dekoder 3-to-8 line yang memiliki 3 pin seleksi (A, B, C) dan 3 pin enable (G1,G2A,G2B) dengan keluaran aktif rendah (Y0âY7):
+Tiga komponen opsional (base, index, displacement) dijumlahkan menjadi alamat efektif (EA), yaitu offset di dalam segmen. Lalu alamat fisik = segmen Ã 16 + EA.
+ð¡ Poin kunci:Contoh: DS = 2000h dan EA = 0150h menghasilkan 20000h + 0150h = 20150h. Perbedaan antar-mode pengalamatan hanyalah kombinasi komponen yang dipakai, misalnya [BX+SI+5] memakai ketiganya.
+Kajian mendalam seluruh varian metode penentuan lokasi data operan dalam arsitektur mikroprosesor, formula perhitungan Alamat Efektif (Effective Address/EA), pemilihan pasangan segmen default dan override prefix, serta analisis dampak mode pengalamatan terhadap efisiensi ukuran byte kode mesin dan konsumsi siklus clock.
+Immediate Addressing, Register Addressing, Direct Memory Addressing, Register Indirect ([BX], [BP], [SI], [DI]), Based Addressing, Indexed Addressing, Based-Indexed Addressing with Displacement, Segment Override Prefix (CS:, ES:, SS:), Perhitungan Alamat Efektif (EA).
+Pada pengalamatan memori tidak langsung, Execution Unit (EU) menghitung Alamat Efektif (EA) 16-bit sebelum BIU mentranslasikannya ke alamat fisik 20-bit. Rumus matematis umum pembentukan EA:
+EA = \begin{bmatrix} \text{BX} \\ \text{BP} \end{bmatrix} + \begin{bmatrix} \text{SI} \\ \text{DI} \end{bmatrix} + \text{Displacement (8-bit / 16-bit)}
+Operand sumber dari register masuk ke ALU, ALU menjalankan operasi (ADD, SUB, AND, SHR), hasilnya ditulis ke tujuan, dan efeknya tercatat di flag.
+ð¡ Poin kunci:Contoh: ADD AX,BX yang hasilnya 0 mengisi ZF = 1; hasil yang melebihi 16 bit mengisi CF = 1. MOV hanya menyalin dan tidak mengubah flag. Flag inilah yang dibaca instruksi lompatan bersyarat di P06.
+Kajian operasional set instruksi transfer data (MOV, XCHG, LEA, PUSH, POP, IN, OUT), operasi hitung aritmetika bilangan bulat (ADD, ADC, SUB, SBB, MUL/IMUL, DIV/IDIV, NEG, CMP), serta manipulasi logika bitwise (AND, OR, XOR, NOT, TEST) dan operasi pergeseran bit (SHL, SHR, SAR, ROL, ROR, RCL, RCR) pada tingkat register mikroprosesor.
+Kaidah Perpindahan Data Memori-ke-Memori (Larangan Khusus x86), Analisis Instruksi LEA vs MOV OFFSET, Aritmetika Multi-Presisi (ADC & SBB), Perbedaan MUL/DIV vs IMUL/IDIV, Logika Bit Masking Port I/O, Operasi Shifting vs Rotating bit.
+InstruksiMOV dest, srcmemiliki batasan perangkat keras ketat yang diatur oleh desain mikro-arsitektur CPU:
+Untuk menjumlahkan atau mengurangkan angka yang lebih besar dari lebar register fisik (misalnya angka 32-bit pada prosesor 16-bit 8086), digunakan instruksiADC(Add with Carry) danSBB(Subtract with Borrow):
+Stack tumbuh ke alamat rendah. Pemanggil mem-push parameter, lalu CALL menyimpan return address (pada near call hanya IP; gambar menampilkan CS:IP untuk far call). Fungsi kemudian PUSH BP dan MOV BP,SP sehingga BP menjadi acuan tetap, sedangkan SP bergerak mengikuti push/pop.
+ð¡ Poin kunci:Parameter diakses di [BP+4] dan seterusnya, variabel lokal di [BP-2] ke bawah. Saat selesai: MOV SP,BP; POP BP; RET.
+Analisis percabangan aliran instruksi tak bersyarat (JMP Short, Near, Far), percabangan bersyarat berbasis status flag ALU, loop perangkat keras, pemanggilan subrutin fungsi (CALL, RET), serta manajemen struktur data Stack Frame berbasis register Base Pointer (BP) untuk alokasi variabel lokal dan parameter fungsi re-entrant.
+JMP Intrasegment vs Intersegment, Conditional Jumps (Unsigned: JA, JB vs Signed: JG, JL), Instruksi LOOP dan LOOPNZ (Pencacah CX Otomatis), Karakteristik Memori Stack (LIFO & SP Auto-Decrement), Calling Convention, Pembentukan Stack Frame.
+Ketika sebuah fungsi dipanggil dalam bahasa tingkat tinggi (seperti C/C++), compiler membangkitkan strukturStack Frameuntuk memastikan variabel lokal tidak saling tumpang tindih saat fungsi memanggil dirinya sendiri (rekursi):
+Satu siklus bus terdiri dari empat T-state. T1: alamat keluar dan ALE mengunci alamat. T2: sinyal RD atau WR aktif. T3: data dipindahkan (bila memori lambat, wait state disisipkan di sini). T4: siklus selesai dan bus bebas.
+ð¡ Poin kunci:Contoh hitung: clock 5 MHz berarti 1 T = 200 ns, sehingga satu siklus bus = 4 Ã 200 = 800 ns. Kecepatan akses memori dibatasi oleh siklus ini.
+Dekomposisi pewaktuan internal eksekusi mikroprosesor dari satu siklus instruksi utuh menjadi siklus-siklus mesin dasar, analisis status denyut clock (T-States), pembacaan diagram pewaktuan (Timing Diagram) Memory Read dan Memory Write, serta perhitungan batasan akses waktu memori (Memory Access Time) untuk penentuan penyisipan Wait State via sinyal READY.
+Pembangkit Clock IC 8284A, Anatomi 4 T-States Baku (T1, T2, T3, T4), Timing Diagram Siklus Baca Memori, Timing Diagram Siklus Tulis Memori, Peran SinyalBHE& A0untuk Bus 16-bit, Sinyal READY dan Perancangan Rangkaian Wait State (Tw).
+Satu denyut periode clock CPU dinamakanT-State(T= 1 /fclock). Pada frekuensi kerja standar 5 MHz, durasi 1 T-State = 200 ns; pada 10 MHz, 1 T-State = 100 ns. Satu siklus mesin standar transfer bus membutuhkan4 T-State:
+Karena bus data 8086 berukuran 16-bit sedangkan memori fisik diorganisasi dalam satuan byte (8-bit), ruang memori 1 MB dibagi secara fisik menjadiDua Bank Memori 512 KB:
+Jika prosesor membaca data word 16-bit pada alamatgenap(misal alamat0040h), CPU dapat mengaktifkan kedua bank sekaligus (A0= 0 danBHE= 0) dalam1 siklus mesin tunggal (4 T-States).
+Namun, jika data word berada pada alamatganjil(misal alamat0041h), CPU terpaksa melakukanDua Siklus Mesin Berurutan (8 T-States): siklus pertama membaca byte dari bank ganjil (D8âD15), siklus kedua membaca byte berikutnya dari bank genap (D0âD7). Hal ini menyebabkan penurunan kecepatan akses memori hingga 50%!
+Ujian komprehensif paruh semester pertama untuk menguji kecakapan analitis dan sintesis mahasiswa dalam merancang sistem minimum berbasis mikroprosesor, meliputi pemetaan dekoder alamat logika gerbang kombinasional, analisis timing bus, dan penelusuran (tracing) eksekusi instruksi tingkat rendah.
+Kuis Analitis Desain Memori, Soal Rancang Bangun Dekoder IC 74LS138, Tracing Nilai Register dan Status 6 Flag, Analisis Diagram Pewaktuan Siklus Mesin dan Perhitungan Wait State.
+Kiri: ruang memori dan ruang port terpisah, diakses dengan IN/OUT, dan dibedakan oleh sinyal M/IO. Kanan: satu ruang alamat saja; port menempati sebagian alamat dan diakses dengan MOV biasa.
+ð¡ Poin kunci:Isolated I/O tidak memakan ruang memori tetapi butuh instruksi khusus. Memory-mapped lebih fleksibel (semua mode pengalamatan bisa dipakai) tetapi mengurangi alamat yang tersedia untuk memori.
+Arsitektur penyambungan modul antarmuka input/output dengan bus sistem prosesor, perbandingan mendasar Isolated I/O (Port-Mapped I/O) vs Memory-Mapped I/O, isolasi bus kelistrikan menggunakan buffer tri-state (74LS244) untuk port input, register latch (74LS374) untuk port output, dan bus transceiver dua arah (74LS245).
+Komparasi Isolated vs Memory-Mapped I/O, Sinyal Kendali M/IOdan PembentukanIOR/IOW, Perancangan Port Masukan 8-bit (74LS244), Perancangan Port Keluaran 8-bit (74LS374), Buffer Bus Bidirectional 74LS245, Isolasi Optocoupler.
+Urutannya: perangkat mengaktifkan INTR; CPU menyelesaikan instruksi berjalan dan, bila flag IF = 1, mengirim INTA; PIC 8259 memberi nomor tipe n; CPU membaca vektor di alamat n Ã 4 pada IVT, memuat CS:IP milik ISR, menjalankannya, lalu kembali dengan IRET.
+ð¡ Poin kunci:Contoh: INT 21h (33 desimal) berarti vektornya di 21h Ã 4 = 0084h. Tiap vektor memakai 4 byte, sehingga IVT 256 entri menempati 1 KB terbawah memori.
+Analisis komparatif metode transfer data Polling vs Interrupt-Driven, mekanisme pensinyalan interupsi hardware (maskable INTR dan non-maskable NMI), siklus pengenalan interupsi ganda (INTA), arsitektur Tabel Vektor Interupsi (IVT), penulisan rutin layanan interupsi (ISR), serta integrasi Pengontrol Interupsi Terprogram (PIC 8259A).
+Polling vs Interrupt, Pin NMI vs INTR, Siklus Pengenalan Interupsi (INTACycle), Struktur Tabel IVT (00000hâ003FFh), Interupsi Dedicated (Tipe 0 s.d. 4), Penyusunan ISR & Instruksi IRET, Cascading Master-Slave PIC 8259A.
+Ketika sebuah periferal luar meminta perhatian CPU melalui jalur maskable pinINTR(dan Flag InterupsiIF = 1), CPU merespons melalui dua siklus mesin interupsi khusus:
+Tabel IVT berlokasi tetap di alamat fisik00000hhingga003FFh(tepat 1.024 Byte). Setiap jenis interupsi dialokasikan4 Byteyang memuat alamat awal ISR:
+\text{Alamat Vektor di IVT} = \text{Tipe INT} \times 4
+UART tidak punya clock bersama, jadi kedua sisi harus sepakat pada baud rate. Satu frame: start bit 0, 8 bit data (LSB dulu), parity opsional, lalu stop bit 1. SPI memakai 4 jalur (SCLK, MOSI, MISO, CS), full duplex dan cepat. I2C hanya 2 jalur (SDA, SCL), tiap perangkat punya alamat, half duplex.
+ð¡ Poin kunci:Pilih SPI bila butuh kecepatan, I2C bila ingin sedikit kabel dengan banyak perangkat, UART untuk komunikasi titik-ke-titik sederhana.
+Prinsip konversi data paralel-ke-serial dan serial-ke-paralel, protokol komunikasi serial asinkron UART (Universal Asynchronous Receiver/Transmitter), kalkulasi Baud Rate generator, level shifter RS-232, serta perancangan bus serial sinkron performa tinggi: Serial Peripheral Interface (SPI) dan Inter-Integrated Circuit (I2C).
+Komunikasi Paralel vs Serial, Struktur Frame Data UART (Start, Parity, Stop Bit), Perhitungan Baud Rate, IC Driver MAX232, Topologi Bus SPI 4-Kawat (MOSI, MISO, SCK, CS), Topologi Bus I2C 2-Kawat (SDA, SCL), Open-Drain & Resistor Pull-Up, Deteksi Error Serial.
+Komunikasi asinkron tidak mentransmisikan sinyal clock bersama. Sebagai gantinya, sinkronisasi waktu clock penerima (RX) dikunci ulang pada setiap karakter data menggunakanStart Bit:
+RISC: instruksi sederhana berpanjang tetap, arsitektur load/store, banyak register, hemat daya, dan mudah di-pipeline. CISC: instruksi kompleks berpanjang variabel, operand boleh langsung dari memori, kode lebih padat.
+ð¡ Poin kunci:x86 modern menerjemahkan instruksi CISC menjadi micro-op bergaya RISC di dalam inti, sedangkan ARM tetap RISC. Jadi kedua pendekatan saling mendekat.
+Komparasi filosofi perancangan arsitektur mikroprosesor: Reduced Instruction Set Computer (RISC) vs Complex Instruction Set Computer (CISC), analisis tren mikroprosesor modern berdaya rendah (ARM Cortex), arsitektur x86-64 server, penerjemahan internal CISC ke Micro-operations (Âµops), serta perkembangan arsitektur terbuka bebas lisensi RISC-V.
+Filosofi Desain RISC vs CISC, Arsitektur Load-Store, Panjang Instruksi Tetap vs Variabel, Frontend CISC Decoder ke Internal Âµops Backend, Arsitektur ARMv8/v9 AArch64, Arsitektur Big.LITTLE Heterogeneous, Arsitektur Terbuka RISC-V ISA.
+Prosesor desktop modern (Intel Core i9 dan AMD Ryzen) sesungguhnya adalah prosesor hibrida yang memadukan kedua dunia:
+CPU mengakses kedua chip lewat bus. 8255 menyediakan tiga port 8-bit (A, B, C) yang mode kerjanya diatur oleh control word, untuk menyambung LED, saklar, atau sensor. 8254 berisi tiga pencacah 16-bit dengan pin GATE dan OUT untuk delay, penghitung, atau pembangkit gelombang.
+ð¡ Poin kunci:Seperti P03, keduanya dipilih lewat dekoder alamat sehingga CPU melihatnya sebagai alamat port tertentu.
+Arsitektur dan pemrograman periferal paralel serbaguna IC Intel 8255 PPI (Programmable Peripheral Interface) untuk interfacing digital, perancangan Control Word Register (Mode 0, Mode 1 Strobed, Mode 2 Bi-directional, dan BSR), serta arsitektur pencacah/pewaktu terprogram IC Intel 8254 PIT untuk pembangkitan denyut clock, pulsa monostable, dan modulasi frekuensi.
+Arsitektur Internal 8255 (Port A, B, C-Upper, C-Lower), Format Byte Control Word I/O Mode, Mode Bit Set/Reset (BSR), Interfacing Keypad Matriks & Seven Segment Display, Arsitektur 3 Counter 16-bit 8254, 6 Mode Operasi PIT (Mode 0 s.d. Mode 5), Pembangkit Gelombang Kotak.
+IC 8255 menyediakan 24 pin I/O terprogram. Register kontrol (Control Word) dikonfigurasi melalui instruksiOUTpada alamat Port Kontrol:
+IC 8254 memiliki tiga counter independen 16-bit (Counter 0, 1, 2) yang dapat mencacah hingga frekuensi clock masukan 10 MHz. Rumus pembangkitan frekuensi padaMode 3 (Square Wave Generator):
+f_{\text{out}} = \frac{f_{\text{clk\_in}}}{\text{Divisor Count (N)}}
+Perangkat meminta layanan lewat DREQ ke DMAC. DMAC mengirim HOLD ke CPU; CPU menyelesaikan siklus bus dan membalas HLDA, lalu DMAC memegang bus dan memindahkan data langsung antara perangkat dan memori. Setelah selesai, bus dikembalikan ke CPU.
+ð¡ Poin kunci:Keuntungannya: CPU bebas mengerjakan hal lain dan throughput tinggi untuk blok data besar, dibanding CPU menyalin data satu per satu.
+Mekanisme transfer data berkecepatan tinggi antara perangkat periferal I/O massal (Hard Drive, SSD, Network Controller, Sound Card) langsung menuju memori utama (RAM) tanpa membebani instruksi CPU melalui kontroler Direct Memory Access (DMA), analisis protokol perebutan bus (Bus Arbitration), dan konfigurasi IC Intel 8237 DMA Controller.
+Kelemahan Programmed I/O vs DMA, Siklus Handshake Bus HOLD & HLDA, Arsitektur 4 Saluran DMA 8237, Mode Transfer (Single, Block, Demand, Cascade), Metode Transfer Fly-By, Perhitungan Throughput Bandwidth Bus.
+Selama operasi normal, CPU adalah satu-satunya penguasa mutlak (Bus Master). Ketika transfer DMA berlangsung, kontroler DMA mengambil alih kepemilikan bus melalui jabat tangan sinyal (handshake):
+Pada metode Programmed I/O biasa, transfer 1 byte membutuhkan instruksiIN AL, DX(4 T-states) danMOV [DI], AL(9 T-states), total13 s.d. 17 T-States per byte.
+Pada transferFly-By DMA, kontroler DMA mengaktifkan sinyal kontrol baca I/O (IOR) dan sinyal tulis memori (MEMW)secara bersamaan dalam siklus clock yang sama. Data mengalir langsung dari periferal ke sel RAM melalui bus data tanpa mampir ke register perantara mana pun, memakan waktu hanya2 s.d. 4 T-States per byte (peningkatan kecepatan hingga 400%!).
+Baris I1âI3 adalah instruksi, sumbu mendatar adalah waktu. Tiap instruksi melewati IF, ID, EX, MEM, WB. Begitu I1 pindah ke ID, I2 sudah mulai IF, dan seterusnya sehingga tahap-tahap saling tumpang tindih.
+ð¡ Poin kunci:Setelah pipeline terisi, satu instruksi selesai tiap siklus (CPI ideal â 1). Latensi satu instruksi tetap 5 siklus; yang meningkat adalah throughput. Hazard dapat menunda aliran ini.
+Teknik akselerasi performa komputasi perangkat keras modern: eksekusi pipelining paralel, deteksi dan mitigasi tiga jenis pipeline hazard, prosesor superscalar multi-issue, eksekusi di luar urutan (Out-of-Order Execution / OoO), hierarki memori cache multi-level, serta protokol koherensi cache pada arsitektur prosesor multi-core.
+Pipelining Klasik 5-Tahap (IF, ID, EX, MEM, WB), Tiga Jenis Hazard (Structural, Data, Control), Teknik Data Forwarding, Dynamic Branch Prediction, Superscalar Multi-Execution Units, Register Renaming, Hierarki Cache (L1, L2, L3), Protokol Koherensi MESI.
+Pipelining memecah siklus instruksi menjadi 5 tahapan sekuensial yang dibatasi oleh register penyangga (pipeline registers):
+Jika tanpa pipelining, 5 instruksi membutuhkan 5 × 5 = 25 siklus clock. Dengan pipelining penuh, 5 instruksi selesai dalam9 siklus clock, dan setelah pipeline terisi penuh, throughput ideal mencapai1 instruksi per siklus (IPC = 1).
+Ketika beberapa inti CPU (Core 0, Core 1) memiliki salinan cache L1 masing-masing untuk alamat RAM yang sama, modifikasi data oleh salah satu core dapat menyebabkan inkonsistensi data (Stale Data).Protokol MESImengunci status setiap blok cache ke dalam 4 keadaan:
+Ujian akhir semester dan presentasi proyek rekayasa komprehensif: sintesis perancangan arsitektur sistem minimum mikroprosesor terintegrasi yang memadukan CPU, subsistem memori primer (SRAM dan ROM), dekoder alamat logika penuh, pengontrol interupsi hardware, antarmuka I/O paralel (PPI 8255), pewaktu (PIT 8254), dan subsistem komunikasi serial.
+Ujian Analisis Teori Komprehensif Sistem Komputer, Perancangan Skematik Sistem Minimum Lengkap, Peta Memori dan Port I/O Bebas Konflik Alamat, Penulisan Kode Driver Inisialisasi Firmware Low-Level, Pengujian Sistem.
+Evaluasi akhir semester menuntut mahasiswa untuk mengintegrasikan seluruh materi perkuliahan ke dalam sebuah dokumen perancangan sistem nyata (Engineering Design Document):
+Slide 16 pertemuan (RSK-2104) dalam bentuk teks. Buka tiap pertemuan, lalu geser slide dengan tombol. Urutan pertemuan diktat di atas sudah disejajarkan dengan RPS; pertemuan 7, 14, dan 15 memakai materi pendalaman karena topiknya berbeda (lihat catatan pada pertemuan tersebut).
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Pengguna memasukkan dua angka melalui keyboard atau tombol.
+Input angka
+Progres demonstrasi
+A=7, B=5
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 01.
+Program penjumlahan dan nilai kerja berada di memori.
+Input angka
+Progres demonstrasi
+Program: jumlahkan A dan B
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 01.
+CPU menjalankan operasi penjumlahan terhadap operand.
+Input angka
+Progres demonstrasi
+7 + 5 = 12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 01.
+Sistem menampilkan nilai yang dihitung melalui perangkat output.
+Input angka
+Progres demonstrasi
+Layar: 12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 01.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+CPU menjalankan instruksi.
+RAM menyimpan data kerja, I/O menghubungkan sistem dengan perangkat luar.
+Stored program memberi fleksibilitas melalui perubahan program.
+Mulai dari perangkat yang dikenal mahasiswa. Gunakan kalkulator untuk membedakan data,
+instruksi, dan hasil. Pertemuan berikutnya membahas organisasi internal CPU.
+Acuan cakupan: RPS pengguna, minggu 1.
+Microchip, AVR CPU Core
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+Microchip, AVR Memory
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/memory/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Register menyediakan dua operand untuk contoh didaktik.
+Operand awal
+Progres demonstrasi
+R0=7, R1=5, R2=0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 02.
+CU memilih operasi tambah dan register tujuan.
+Operand awal
+Progres demonstrasi
+ADD R2, R0, R1
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 02.
+ALU menghasilkan jumlah kedua operand.
+Operand awal
+Progres demonstrasi
+Hasil sementara=12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 02.
+CU mengatur hasil agar masuk ke register tujuan.
+Operand awal
+Progres demonstrasi
+R2=12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 02.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Von Neumann dan Harvard mengatur akses memori dengan cara berbeda.
+ALU menghitung, CU mengatur, register menyimpan.
+Register khusus mengelola keadaan dan alur CPU.
+Tekankan model konseptual dan variasi ISA. PC yang terlihat software dapat memiliki semantik
+khusus. Lanjutkan ke bus dan memori pada pertemuan 3.
+Acuan cakupan: RPS pengguna, minggu 2.
+Arm, Developer Suite Developer Guide
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+Microchip, AVR CPU Core
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+Microchip, General Purpose Registers
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/gpr/
+Microchip, Status Register
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/status/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+CPU menyiapkan alamat instruksi contoh.
+PC
+PC=0x1000
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 03.
+Memori merespons READ dan mengirim instruksi.
+PC
+IR=LOAD R0,[0x2000]
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 03.
+CU mengenali operasi baca data dari alamat 0x2000.
+PC
+Operand alamat=0x2000
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 03.
+Transaksi baca kedua memuat nilai ke R0.
+PC
+Mem[0x2000]=42, R0=42
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 03.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Bus membagi fungsi alamat, data, dan kontrol.
+Ruang alamat bukan jaminan RAM terpasang.
+Fetch dan akses operand dapat memakai transaksi terpisah.
+Gunakan alamat heksadesimal dan sebut asumsi byte-addressed. Untuk Harvard, ruang program
+dan data dapat terpisah. Detail bus perangkat harus mengikuti datasheet.
+Acuan cakupan: RPS pengguna, minggu 3.
+Arm, Developer Suite Developer Guide
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+Microchip, AVR Memory
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/memory/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+BX menyimpan offset awal tabel.
+Offset basis
+Progres demonstrasi
+BX=0x2000
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 04.
+Tambahkan displacement 4 byte pada basis.
+Offset basis
+Progres demonstrasi
+EA=0x2004
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 04.
+Segmen dan offset memilih lokasi word.
+Offset basis
+Progres demonstrasi
+DS:0x2004 berisi 42
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 04.
+Instruksi memuat isi lokasi, bukan nilai alamat.
+Offset basis
+Progres demonstrasi
+MOV AX,[BX+4], AX=42
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 04.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Mode pengalamatan menentukan sumber operand.
+EA dan isi memori merupakan hal berbeda.
+Ukuran data dan aturan ISA memengaruhi akses.
+Semua contoh MOV pada bagian ini adalah potongan x86 Intel 16 bit. Inisialisasi segmen dan area
+memori diperlukan sebelum praktik.
+Acuan cakupan: RPS pengguna, minggu 4.
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Arm, Developer Suite Developer Guide
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Instruksi pertama memasukkan nilai 7 ke AX.
+Inisialisasi
+Progres demonstrasi
+MOV AX,7 / AX=7
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 05.
+Nilai 5 tersedia di BX.
+Inisialisasi
+Progres demonstrasi
+MOV BX,5 / BX=5
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 05.
+ADD menghitung jumlah dan menulis ke AX.
+Inisialisasi
+Progres demonstrasi
+ADD AX,BX / AX=12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 05.
+MOV menyalin hasil untuk pemeriksaan.
+Inisialisasi
+Progres demonstrasi
+MOV CX,AX / CX=12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 05.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Assembly menyatakan operasi pada register dan memori.
+MOV menyalin, ALU mengolah, stack menyimpan sementara.
+Ukuran operand dan keadaan awal menentukan hasil.
+Gunakan potongan Intel 16 bit yang konsisten. Jangan memakai PUSH immediate sebagai instruksi
+8086 asli. Minta mahasiswa menulis tabel perubahan, bukan hanya hasil akhir.
+Acuan cakupan: RPS pengguna, minggu 5.
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Counter dimulai dari 3, akumulator dari 0.
+Keadaan awal
+Progres demonstrasi
+CX=3, AX=0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 06.
+Tambahkan CX sebelum LOOP menguranginya.
+Keadaan awal
+Progres demonstrasi
+AX=3, CX berikutnya=2
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 06.
+Tambahkan nilai counter yang baru.
+Keadaan awal
+Progres demonstrasi
+AX=5, CX berikutnya=1
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 06.
+Tambahkan 1 lalu LOOP mengakhiri perulangan.
+Keadaan awal
+Progres demonstrasi
+AX=6, CX=0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 06.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Branch memilih alur berdasarkan kondisi atau tanpa syarat.
+Counter dan kondisi berhenti menentukan loop.
+Interpretasi signed/unsigned menentukan branch yang benar.
+Bedakan LOOP dari DEC/JNZ. Hindari counter awal nol dalam demonstrasi LOOP karena terjadi
+wrap 16 bit dan pengulangan sangat banyak. Latihan adalah model sederhana tanpa pipeline.
+Acuan cakupan: RPS pengguna, minggu 6.
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Tentukan hasil program sebelum menjalankannya.
+Prediksi
+Progres demonstrasi
+Target AX=12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 07.
+Hentikan program sebelum ADD untuk melihat operand.
+Prediksi
+Progres demonstrasi
+AX=7, BX=5
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 07.
+Jalankan operasi lalu periksa register tujuan.
+Prediksi
+Progres demonstrasi
+AX berubah menjadi 12
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 07.
+Bandingkan hasil dengan prediksi dan simpan trace.
+Prediksi
+Progres demonstrasi
+Prediksi=aktual
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 07.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Simulator membantu mengamati perubahan keadaan.
+Breakpoint dan step mempersempit sumber kesalahan.
+Laporan yang baik menjelaskan sebab dan hasil.
+Instruksi menu dan target dapat berbeda menurut versi. Keil menyediakan opsi Use Simulator
+hanya untuk target yang didukung. Jangan menganggap seluruh perangkat atau periferal
+tersimulasi.
+Acuan cakupan: RPS pengguna, minggu 7.
+Keil, Debugger Simulation
+https://www.keil.com/support/man/docs/uv4/uv4_dg_debug.asp
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Kasus: ruang 16 bit, byte-addressed, RAM 8 KiB mulai 2000h.
+Baca soal
+Progres demonstrasi
+Ruang total=64 KiB
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 08.
+Konversikan 8 KiB menjadi 2000h byte.
+Baca soal
+Progres demonstrasi
+Ukuran=8192 byte
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 08.
+Alamat akhir = awal + ukuran - 1.
+Baca soal
+Progres demonstrasi
+2000h + 2000h - 1 = 3FFFh
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 08.
+Hitung ulang panjang rentang dan pastikan tidak melewati FFFFh.
+Baca soal
+Progres demonstrasi
+RAM=2000h-3FFFh
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 08.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Jawaban harus menyertakan asumsi dan langkah.
+Trace lebih kuat daripada menebak hasil akhir.
+Format ujian resmi tetap mengikuti dosen.
+Gunakan sebagai ulasan dan diskusi pembahasan. Jangan menampilkan kunci saat latihan mandiri
+berlangsung. UTS di RPS dapat berupa ujian tertulis dan praktik.
+Acuan cakupan: RPS pengguna, minggu 8.
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Microchip, AVR CPU Core
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Program menetapkan mode dan arah pin model generik.
+Konfigurasi
+Progres demonstrasi
+CONTROL=mode input
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 09.
+CPU menunggu tanda data tersedia.
+Konfigurasi
+Progres demonstrasi
+STATUS.READY=1
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 09.
+Akses register data menerima nilai sensor.
+Konfigurasi
+Progres demonstrasi
+DATA=42
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 09.
+Program mengirim nilai ke tampilan atau indikator.
+Konfigurasi
+Progres demonstrasi
+Tampilan=42
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 09.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Antarmuka menyelaraskan hardware dan software.
+MMIO dan port I/O berbeda pada ruang alamat serta akses.
+Status, timing, dan level sinyal menentukan transfer yang benar.
+Alamat register dalam animasi adalah model generik. MMIO memiliki efek hardware, bukan RAM
+biasa. Detail interfacing elektrik mengikuti datasheet periferal.
+Acuan cakupan: RPS pengguna, minggu 9.
+Arm, Developer Suite Developer Guide
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+CPU menjalankan pekerjaan normal.
+Program utama
+Progres demonstrasi
+Main aktif, counter kejadian=0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 10.
+Sumber teraktifkan menandai permintaan pending.
+Program utama
+Progres demonstrasi
+IRQ pending=1
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 10.
+CPU menyimpan konteks dan handler memproses kejadian.
+Program utama
+Progres demonstrasi
+Counter kejadian=1
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 10.
+Konteks dipulihkan, program utama melanjutkan.
+Program utama
+Progres demonstrasi
+Main aktif, IRQ ditangani
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 10.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Interupsi merespons kejadian tanpa polling terus-menerus.
+Vektor menentukan tujuan handler.
+Konteks, flag sumber, dan data bersama perlu dikelola.
+Pisahkan contoh IVT 8086 dari vektor ARM/AVR. Contoh animasi hanya menjelaskan alur dan
+bukan waktu layanan sebuah chip tertentu.
+Acuan cakupan: RPS pengguna, minggu 10.
+Microchip, AVR Interrupts
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/
+Intel, IA-32 Software Developer Manuals
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Contoh UART idle high, start bit bernilai 0.
+1
+0
+Idle
+Start
+Frame 8N1, data=0x55
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 11.
+Bit dikirim LSB lebih dahulu.
+1
+0
+Idle
+Start
+d0..d3 = 1,0,1,0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 11.
+Penerima mengumpulkan semua delapan bit.
+1
+0
+Idle
+Start
+d4..d7 = 1,0,1,0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 11.
+Stop bernilai 1, penerima merekonstruksi byte.
+1
+0
+Idle
+Start
+Byte diterima=0x55
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 11.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+UART memakai framing tanpa clock bersama.
+SPI memakai clock dan select, I2C memakai SDA/SCL serta alamat.
+Konfigurasi protokol dan level listrik harus sesuai.
+Animasi menunjukkan UART logika, bukan RS-232 dan bukan rangkaian kabel final. Waktu frame
+teoritis 10/9600 detik, sekitar 1,042 ms. Aktifkan analisis sinyal per langkah.
+Acuan cakupan: RPS pengguna, minggu 11.
+Microchip, UART
+https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/communication-connectivity/uart
+Microchip, SPI Introduction
+https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/
+NXP, UM10204 rev. 7
+https://www.nxp.com/docs/en/user-guide/UM10204.pdf
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Contoh sensor memberi tegangan dalam rentang ADC.
+Sinyal analog
+Progres demonstrasi
+Vin=1,65 V, Vref=3,3 V
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 12.
+ADC mengambil sampel ketika conversion dimulai.
+Sinyal analog
+Progres demonstrasi
+ADC 10 bit, 1.024 level
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 12.
+Model ideal floor(Vin/Vref x 1024), dibatasi 0..1023.
+Sinyal analog
+Progres demonstrasi
+Kode=512
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 12.
+Program mengolah kode untuk tampilan atau keputusan.
+Sinyal analog
+Progres demonstrasi
+Kode setengah skala=512
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 12.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Integrasi MCU membantu membangun sistem kendali.
+Timer/counter, ADC/DAC, dan GPIO memiliki tugas berbeda.
+Resolusi, akurasi, dan laju sampling bukan hal yang sama.
+Rumus ADC adalah model ideal dan tidak memodelkan offset/noise atau karakter transfer chip
+tertentu. Step input tetap dalam rentang yang diasumsikan.
+Acuan cakupan: RPS pengguna, minggu 12.
+Microchip, AVR CPU Core
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+Microchip, Timers
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/
+Microchip, ADC Code Width
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Nilai awal berada di bawah ambang ON.
+Suhu rendah
+Progres demonstrasi
+T=27 C, kipas OFF
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 13.
+Suhu mencapai ambang untuk menyalakan kipas.
+Suhu rendah
+Progres demonstrasi
+T=30 C, kipas ON
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 13.
+Suhu turun tetapi belum mencapai ambang OFF.
+Suhu rendah
+Progres demonstrasi
+T=29 C, kipas tetap ON
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 13.
+Ambang OFF tercapai, output dinonaktifkan.
+Suhu rendah
+Progres demonstrasi
+T=28 C, kipas OFF
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 13.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Sensor menghasilkan data, program menentukan tindakan.
+Driver menghubungkan sinyal kontrol dengan beban.
+Pengujian batas dan hysteresis membuat perilaku lebih jelas.
+Contoh ambang adalah rancangan pembelajaran, bukan spesifikasi alat komersial. Rumus
+ultrasonik mengasumsikan kecepatan suara dan lintasan sederhana. Baca datasheet sensor serta
+driver yang dipakai.
+Acuan cakupan: RPS pengguna, minggu 13.
+Microchip, ADC Code Width
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+Microchip, Timers
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/
+Microchip, SPI Introduction
+https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/
+NXP, UM10204 rev. 7
+https://www.nxp.com/docs/en/user-guide/UM10204.pdf
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Model register unsigned 8 bit dimulai pada 0x10.
+REG=00010000
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 14.
+OR dengan 0x08 memasang bit tanpa menghapus bit 4.
+REG=00011000 / 0x18
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 14.
+Mask clear menghapus bit 4 pada lebar 8 bit.
+REG=00001000 / 0x08
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 14.
+XOR dengan 0x08 membalik bit 3 kembali ke nol.
+REG=00000000 / 0x00
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 14.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Mask mengubah bit terpilih dengan operasi logika.
+Lebar tipe dan perilaku register harus diketahui.
+volatile, atomicity, dan sinkronisasi adalah hal berbeda.
+Potongan C adalah model operasi uint8_t, bukan firmware siap flash. Contoh lengkap menyertakan
+cast untuk lebar 8 bit. Pembelajaran harus tetap memakai datasheet target pada praktik hardware.
+Acuan cakupan: RPS pengguna, minggu 14.
+Microchip, AVR CPU Core
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+Microchip, AVR Interrupts
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Reset dan nyatakan kondisi input sebelum demonstrasi.
+Keadaan awal demo
+Progres demonstrasi
+Suhu=27 C, kipas OFF
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 15.
+Input mencapai kondisi yang dirancang.
+Keadaan awal demo
+Progres demonstrasi
+Suhu=30 C, kipas ON
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 15.
+Input di antara ambang menguji hysteresis.
+Keadaan awal demo
+Progres demonstrasi
+Suhu=29 C, kipas tetap ON
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 15.
+Bandingkan respons dengan tabel uji dan jelaskan kesimpulan.
+Keadaan awal demo
+Progres demonstrasi
+Suhu=28 C, kipas OFF
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 15.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Proyek menyatukan hardware dan software.
+Demo yang dapat diulang memudahkan penilaian.
+Bukti uji harus mendukung klaim fungsi.
+Gunakan sesi ini untuk demonstrasi dan tanya jawab sesuai RPS. Jangan mengubah komposisi
+penilaian. Bantu mahasiswa menghubungkan setiap klaim dengan bukti.
+Acuan cakupan: RPS pengguna, minggu 15.
+Keil, Debugger Simulation
+https://www.keil.com/support/man/docs/uv4/uv4_dg_debug.asp
+Microchip, ADC Code Width
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+Microchip, Timers
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Mikroprosesor dan Mikrokontroler
+Rekayasa Sistem Komputer
+RSK-2104 - Materi sesuai RPS
+10 pokok bahasan, demonstrasi 4 langkah, latihan, dan pembahasan.
+Sensor tidak memperbarui nilai, program terlihat macet.
+Gejala
+Progres demonstrasi
+STATUS.READY selalu 0
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 16.
+Periksa konfigurasi dan kemungkinan komunikasi gagal.
+Gejala
+Progres demonstrasi
+Mode / kabel / status
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 16.
+Tambahkan timeout dan status error yang dapat diamati.
+Gejala
+Progres demonstrasi
+Batas waktu tercapai
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 16.
+Uji kondisi normal dan gagal setelah perubahan.
+Gejala
+Progres demonstrasi
+Normal pulih, gagal dilaporkan
+Animasi bergerak: buka animasi/index.html, pilih pertemuan 16.
+Pembahasan tersedia di halaman berikutnya.
+Inti pertemuan
+Integrasi yang benar memerlukan perangkat, program, dan timing yang cocok.
+Diagnosis memisahkan gejala dari penyebab.
+Kesimpulan akhir harus didukung hasil pengujian.
+Laksanakan evaluasi sesuai ketentuan dosen. Materi ini merupakan ulasan dan latihan integrasi,
+tidak menetapkan durasi, bobot butir, atau kunci ujian resmi.
+Acuan cakupan: RPS pengguna, minggu 16.
+Microchip, AVR Interrupts
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/
+Microchip, UART
+https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/communication-connectivity/uart
+Microchip, SPI Introduction
+https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/
+NXP, UM10204 rev. 7
+https://www.nxp.com/docs/en/user-guide/UM10204.pdf
+Microchip, ADC Code Width
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+Ilustrasi AI bersifat konseptual. Diagram dan contoh dirancang untuk pembelajaran.
+PDF menampilkan tahap statis; animasi bergerak tersedia pada pendamping offline.
+Diktat Bahan Ajar Perkuliahan Mikroprosesor â¢ 16 Pertemuan Lengkap
+Program Studi Rekayasa Sistem Komputer / Teknik Komputer â¢ Fakultas Teknologi Informasi
+â Kembali ke Halaman Utama Portal Bahan Ajar
+
+===== LINKS =====
+
+ -> https://cakrawala.asia/servis/ajar/index.html
+1 -> https://cakrawala.asia/servis/ajar/rangkuman_assembly_emu8086.html
+2 -> https://cakrawala.asia/servis/ajar/konsep_sistem_tertanam.html
+3 -> https://cakrawala.asia/servis/ajar/internet_of_things.html
+4 -> https://cakrawala.asia/servis/ajar/mikroprosesor.html
+5 -> https://cakrawala.asia/servis/ajar/pengantar_teknologi_informasi.html
+ð  Beranda Silabus -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#header-top
+P01: Pengantar & Evolusi MPU -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p1
+P02: Arsitektur Internal CPU -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p2
+P03: Sistem Bus & Dekode Alamat -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p3
+P04: Mode Pengalamatan Data -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p4
+P05: Set Instruksi: Data & ALU -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p5
+P06: Alur Program & Stack Frame -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p6
+P07: Siklus Mesin & Pewaktuan -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p7
+P08: Evaluasi Tengah Semester (UTS) -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p8
+P09: Antarmuka I/O: Memory vs Port -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p9
+P10: Arsitektur Sistem Interupsi -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p10
+P11: Komunikasi Serial (UART, SPI, I2C) -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p11
+P12: RISC vs CISC & ARM Modern -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p12
+P13: PPI 8255 & Timer 8254 -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p13
+P14: Direct Memory Access (DMA) -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p14
+P15: Pipelining & Superscalar -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p15
+ð Referensi -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#sec-referensi
+P16: Evaluasi Akhir Semester (UAS) -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#p16
+ðï¸ Slide Kuliah (RPS) -> https://cakrawala.asia/servis/ajar/mikroprosesor.html#sec-slide
+â Kembali ke Portal Utama -> https://cakrawala.asia/servis/ajar/index.html
+â Kembali ke Beranda Portal -> https://cakrawala.asia/servis/ajar/index.html
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/memory/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/memory/
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274 -> https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/gpr/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/gpr/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/status/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/status/
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274 -> https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/memory/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/memory/
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274 -> https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://www.keil.com/support/man/docs/uv4/uv4_dg_debug.asp -> https://www.keil.com/support/man/docs/uv4/uv4_dg_debug.asp
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274 -> https://documentation-service.arm.com/static/5e9578fe8259fe2368e2c274
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/
+https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html -> https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
+https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/communication-connectivity/uart -> https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/communication-connectivity/uart
+https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/ -> https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/
+https://www.nxp.com/docs/en/user-guide/UM10204.pdf -> https://www.nxp.com/docs/en/user-guide/UM10204.pdf
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/
+https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/ -> https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/
+https://www.nxp.com/docs/en/user-guide/UM10204.pdf -> https://www.nxp.com/docs/en/user-guide/UM10204.pdf
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/core/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/
+https://www.keil.com/support/man/docs/uv4/uv4_dg_debug.asp -> https://www.keil.com/support/man/docs/uv4/uv4_dg_debug.asp
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/peripherals/timers/
+https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/peripherals/interrupts/
+https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/communication-connectivity/uart -> https://www.microchip.com/en-us/products/microcontrollers/8-bit-mcus/peripherals/communication-connectivity/uart
+https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/ -> https://developerhelp.microchip.com/xwiki/bin/view/applications/SPI/
+https://www.nxp.com/docs/en/user-guide/UM10204.pdf -> https://www.nxp.com/docs/en/user-guide/UM10204.pdf
+https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/ -> https://developerhelp.microchip.com/xwiki/bin/view/products/data-converters/adc-specs/code-width/
+â Kembali ke Halaman Utama Portal Bahan Ajar -> https://cakrawala.asia/servis/ajar/index.html
+
+===== IMAGES =====
+
