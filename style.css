@@ -73,7 +73,7 @@ input {
     background-color: transparent;
     width: 100%;
     padding: .5em 0 .5em .5em;
-    transition: .5s all;
+    transition: .2s all;
 }
 
 .lefCon:hover, .lefCon:active{
@@ -84,6 +84,13 @@ input {
 
 .right-bar{
     max-width: 1100px;
-    height: 700px;
-    /* overflow-y: scroll; */
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: #334155 transparent;
+}
+
+.materi{
+    width: 300px;
+    margin-top: 10em;
+    margin-bottom: 10em;
 }

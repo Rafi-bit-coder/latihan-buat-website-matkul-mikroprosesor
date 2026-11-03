@@ -1,1 +1,3 @@
-const observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver((entries) => {
+    console.log()
+});
