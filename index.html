@@ -17,7 +17,7 @@
                 <p class="edit">Silabus Pertemuan</p>
                 <input type="search" placeholder="Cari materi pertemuan...">
             </div>
-            <hr>
+            <span class="border"></span>
             <div class="left-mid-bar">
                 <a href="#beranda" id="beranda" class="T lefCon">Beranda Silabus</a>
                 <a href="#p01" id="p01" class="T lefCon pertemuan_ke-1">P01: Pengantar & Evolusi MPU</a>
@@ -37,17 +37,96 @@
                 <a href="#p15" id="p15" class="T lefCon pertemuan_ke-15">P15: Pipelining &Superscalar</a>
                 <a href="#referensi" id="referensi" class="T lefCon">Referensi</a>
                 <a href="#UAS" id="UAS" class="T lefCon pertemuan_ke-16">Evaluasi Akhir Semester (UAS)</a>
-                <a href="#RPS" id="UTS" class="T lefCon">Slide Kuliah (RPS)</a>
+                <a href="#RPS" id="RPS" class="T lefCon">Slide Kuliah (RPS)</a>
             </div>
-            <hr>
+            <span class="border"></span>
             <div class="left-footer-bar">
 
             </div>
         </div>
     </section>
     <section id="right-bar" class="right-bar">
-        <div class="matari T" id="beranda">beranda awal</div>
-        <div class="materi T" id="p01">materi 1</div>
+        <div class="materi T1" id="beranda">
+            <span class="point">
+                REKAYASA SISTEM KOMPUTER
+            </span>
+            <div class="inti-materi">
+                <h1>Diktat Kuliah: Arsitektur & Organisasi Mikroprosesor</h1>
+                <p>Kajian menyeluruh 16 pertemuan akademik berbasis Rekayasa Sistem Komputer: membedah arsitektur internal silikon prosesor, logika bus interkoneksi, timing cycle tingkat gerbang, sistem memori tersegmentasi, interrupt controller, DMA, hingga komputasi multi-core.</p>
+            </div>
+            <span class="border"></span>
+            <div class="ketTambahan">
+                <p>Bobot Perkuliahan: 3 SKS (Teori Mendalam & Praktik Rancang Bangun)</p>
+                <p>Spesialisasi: Hardware Architecture, Low-Level Driver & Embedded Interfacing</p>
+                <a href="#beranda" style="color: #38bdf8;"> -- kembali ke Beranda Portal</a>
+            </div>
+        </div>
+        <div class="materi T" id="p01">
+            <span class="point">
+                PERTEMUAN 01
+            </span>
+            <div class="inti-materi">
+                <h1>Pengantar Mikroprosesor & Evolusi Arsitektur Komputer</h1>
+                <span class="border"></span>
+                <div style="color: #94a3b8; border-left: 2px solid #38bdf8; padding: .7rem 1rem; margin: .5rem 0 1.2rem; line-height: 1.72; background-color: rgba(15, 23, 42, 0.6); border-top-right-radius: 1em; border-bottom-right-radius: 1em;">
+                    <strong>Penjelasan Gambar</strong>
+                    <p style="margin: .4rem 0;">Baca dari kiri ke kanan: tiap kotak membuat nama chip, tahun, dan lebar data. 8086 disorot karena menjadi dasar keluarga x86 yang masih hidup di PC modern.</p>
+                    <p style="margin: .4rem 0;">Poin Kunci: Tren utamanya: Jebar data naik(4 -> 64bit), transistor naik dari 2.300 ke miliaran, dan ruang alamat membesar. Lebar data menentukan operand per instruksi; lebar bus alamat n bit menentukan kapasitas memori 2n byte.</p>
+                </div>
+                <div style="color: #94a3b8; padding: .7rem 1rem; margin: .5rem 0 1.2rem; line-height: 1.72; background-color: rgba(15, 23, 42, 0.6); border-radius: 1em;">
+                    <strong>DEFINISI TOPIK</strong>
+                    <p style="margin: .4rem 0;">Dekomposisi struktural dan fungsional internal Central Processing Unit (CPU) yang memisahkan arsitektur ke dalam Bus Interface Unit (BIU) dan Execution Unit (EU). Pembahasan mencakup perancangan unit logika aritmetika (ALU), mekanisme kontrol mikro (Control Unit), organisasi bank register internal, serta analisis kondisi batas matematis pada Flag Register 16-Bit.</p>
+                    <strong>POKOK PEMBAHASAN</strong>
+                    <p style="margin: .4rem 0;">Pembagian Dua Unit Inti 8086 (BIU cs EU), Antrian Instruksi (Instruction Pre-fetch Queue), Struktur ALU, Control Unit (Hardwired vs Microprogrammed), General Purpose Register, Index & Pointer Registers, Segment Registers, dan Dekonstruksi 9 Bit Aktif Flag Register.</p>
+                </div>
+                <strong style="margin: 2rem 0 1rem;">Konsep Utama & Pendalaman Teori Rekayasa</strong>
+                <span class="border"></span>
+                <h3 style="margin: 1.4rem 0 0.55rem;">1. Taksonomi Generasi Mikroprosesor & Skalabilitas Arsitektur</h3>
+                <p>Dalam rekayasa sistem komputer, evolusi mikroprosesor ditandai oleh ekspansi lebar bus data internal/eksternal, kapasitas pengalamatan fisik, serta kerapatan integrasi transistor per milimeter persegi silikon:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Prosesor & Tahun</th>
+                            <th>Lebar Data / Alamat</th>
+                            <th>Kapasitas Ruang Fisik</th>
+                            <th>Jumlah Transistor & Litografi</th>
+                            <th>Fitur Kunci Arsitektur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Intel 4004 (1971)</td>
+                            <td>4-bit/12-bit</td>
+                            <td>4 KB memori program + 640 byte RAM data</td>
+                            <td>2.300 (10um NMOS)</td>
+                            <td>Mikroprosesor komersial monolitik pertama, kalkulator desimal bus tunggal.</td>
+                        </tr>
+                        <tr>
+                            <td>Intel 8080 (1974)</td>
+                            <td>8-bit/16-bit</td>
+                            <td>64 Kilobyte</td>
+                            <td>6.000 (6um NMOS)</td>
+                            <td>CPU komputer mikro pertama (Altair 8800), clock 2MHz, sistem bus 3-state.</td>
+                        </tr>
+                        <tr>
+                            <td>Intel 8086</td>
+                            <td>16-bit/20-bit</td>
+                            <td>1 Megabyt</td>
+                            <td>29.000 (3um HMOS)</td>
+                            <td>Pondasi instruksi x86 CISC, segmentasi memori 16-bit, antrian instruksi 6-byte</td>
+                        </tr>
+                        <tr>
+                            <td>Intel</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <div class="materi T" id="p02">materi 2</div>
         <div class="materi T" id="p03">materi 3</div>
         <div class="materi T" id="p04">materi 4</div>
@@ -62,7 +141,7 @@
         <div class="materi T" id="p13">materi 13</div>
         <div class="materi T" id="p14">materi 14</div>
         <div class="materi T" id="p15">materi 15</div>
-        <div class="materi T" id="refernsi">referensi</div>
+        <div class="materi T" id="referensi">referensi</div>
         <div class="materi T" id="UAS">Evaluasi Akhir Semester</div>
         <div class="materi T" id="RPS">Slide Kuliah (RPS)</div>
     </section>

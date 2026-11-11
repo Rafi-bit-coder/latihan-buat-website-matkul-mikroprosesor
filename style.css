@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     box-sizing: border-box;
+    border: none;
     margin: 0;
     padding: 0;
     color: white;
@@ -10,25 +11,30 @@
 }
 
 body{
-    background-color: #0b1120;
+    max-width: 1440px;
     display: flex;
+    margin: 0 auto;
+    background-color: #0b1120;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-hr{
+.border{
+    width: 100%;
     margin-top: .5em;
     margin-bottom: .5em;
+    border: 1px solid #94a3b8;
 }
 
 .left-bar{
+    width: 320px;
     position: sticky;
-    /* display: flex; */
     justify-content: right;
     overflow-y: scroll;
-    scrollbar-width: thin;
+    /* scrollbar-width: thin; */
     scrollbar-color: #334155 transparent;
-}
-
-.left-top-bar{
+    padding: 2rem 1.25rem 2rem 1.5rem;
+    flex-shrink: 0;
 }
 
 .left-top-bar > *{
@@ -36,8 +42,16 @@ hr{
     margin-bottom: 1em;
 }
 
-input {
+input[type=search]{
     width: 100%;
+    background-color: transparent;
+    border: 1px solid #94a3b8;
+    border-radius: .5em;
+    padding: .5em;
+}
+
+input[type=search]:focus{
+    border: 1px solid #38bdf8;
 }
 
 .left-bar-materi-container{
@@ -87,16 +101,69 @@ input {
 .right-bar{
     display: flex;
     flex-direction: column;
+    flex: 1;
     /* justify-content: center; */
     max-width: 1100px;
+    width: calc();
     height: 100vh;
+    padding: 2.5rem 3rem;
     overflow-y: scroll;
     scrollbar-color: #334155 transparent;
 }
 
+.materi, .materi:first-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    padding: 2.25em 2em;
+    background: linear-gradient(135deg, #1e293b 0%, #0b1120 100%);
+    border: 1px solid #334155;
+    border-radius: 1em;
+}
+
 .materi{
-    width: 300px;
-    height: 20em;
-    margin-top: 30em;
-    margin-bottom: 30em;
+    background: #1e293b;
+}
+
+.point{
+    width: fit-content;
+    padding: 0.25em 0.75em;
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.inti-materi{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.inti-materi > p{
+    color: #94a3b8;
+    margin-bottom: 0.95rem;
+    line-height: 1.72;
+}
+
+.ketTambahan{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #334155;
+    border-radius: .5;
+}
+
+@media screen and (max-width: 960px) {
+    .left-bar{
+        display: none;
+        position: absolute;
+    }
 }
